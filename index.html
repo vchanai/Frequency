@@ -1,0 +1,877 @@
+<!DOCTYPE html><html><head><meta name="x-poe-datastore-behavior" content="local_only"><meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' 'unsafe-eval' data: blob: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://code.jquery.com https://unpkg.com https://d3js.org https://threejs.org https://cdn.plot.ly https://stackpath.bootstrapcdn.com https://maps.googleapis.com https://cdn.tailwindcss.com https://ajax.googleapis.com https://kit.fontawesome.com https://cdn.datatables.net https://maxcdn.bootstrapcdn.com https://code.highcharts.com https://tako-static-assets-production.s3.amazonaws.com https://www.youtube.com https://fonts.googleapis.com https://fonts.gstatic.com https://pfst.cf2.poecdn.net https://puc.poecdn.net https://i.imgur.com https://wikimedia.org https://*.icons8.com https://*.giphy.com https://picsum.photos https://images.unsplash.com; frame-src 'self' https://www.youtube.com https://trytako.com; child-src 'self'; manifest-src 'self'; worker-src 'self'; upgrade-insecure-requests; block-all-mixed-content;"><meta http-equiv="x-dns-prefetch-control" content="off"><script src="https://puc.poecdn.net/authenticated_preview_page/standard.3ef2c256959faf5a756d.js"></script>
+    <meta charset="utf-8">
+    <title>Poe</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+  <script src="https://puc.poecdn.net/authenticated_preview_page/disableWebRTC.9710cebe07429a9e8e06.js"></script><meta name="x-poe-allow-downloads" content="true"><meta name="x-poe-datastore-behavior" content="disabled"><script src="https://puc.poecdn.net/authenticated_preview_page/tw.b9024aecac666455e183.js"></script><script src="https://puc.poecdn.net/authenticated_preview_page/deps.faccd16000d314dc16d5.js"></script><script src="https://puc.poecdn.net/authenticated_preview_page/exports.b0f0f482cdeb5302b0b9.js"></script><script src="https://puc.poecdn.net/authenticated_preview_page/renderer.75c73ae6b4235f62945a.js"></script><script>Object.defineProperty(exports, "__esModule", {value: true}); function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }var _react = require('react'); var _react2 = _interopRequireDefault(_react);
+var _lucidereact = require('lucide-react');
+var _framermotion = require('framer-motion');
+
+// --- Data Structure (Balanced: Physical vs Spiritual) ---
+
+const guideData = {
+  intro: {
+    title: "頻率能量盤使用指南",
+    corePrinciples: [
+      "共振原理：人體是物理肉身與能量體（Aura）的結合。聲音頻率能同時調整細胞振動（物理）與脈輪頻率（靈性）。",
+      "雙重作用：低頻（174-285Hz）側重於身體修復與扎根；中頻（396-528Hz）側重情緒與轉化；高頻（741-963Hz）側重靈性覺醒。",
+      "放置建議：置於身體周圍 30-50cm 處。若針對身體痛點，可直接靠近患處；若針對靈性冥想，建議置於頭頂或眉心前方。",
+      "意圖設定：能量跟隨意念流動。使用前請在心中默念你的意圖（例如：「我釋放焦慮」或「我連結高我」），能放大頻率效果。"
+    ]
+  },
+  groups: [
+    {
+      id: "group1",
+      navLabel: "身體修復",
+      title: "第一組：物理扎根與修復",
+      frequencies: ["174Hz", "285Hz"],
+      icon: _react2.default.createElement(_lucidereact.Heart, { className: "w-6 h-6" ,} ),
+      color: "bg-red-50 text-red-800",
+      borderColor: "border-red-200",
+      scenarios: "緩解疼痛、術後恢復、缺乏安全感、海底輪失衡",
+      usage: [
+        "痛點共振：將能量盤靠近身體不適部位（約 10-15cm），觀想白光修復細胞。",
+        "接地冥想：赤腳踩地，將能量盤置於腳邊，想像樹根從腳底延伸入地心，建立物理與靈性的安全感。"
+      ],
+      details: [
+        {
+          freq: "174Hz",
+          title: "基礎鎮痛與安全感",
+          chakra: "地球之星脈輪 (Earth Star)",
+          desc: "天然的止痛劑，同時賦予靈魂深層的安全感。",
+          physical: [
+            "緩解偏頭痛、背痛及肌肉痠痛。",
+            "降低身體發炎反應，減輕器官壓力。",
+            "改善因壓力導致的淺眠與緊繃。"
+          ],
+          spiritual: [
+            "給予「我在此處很安全」的靈性確認。",
+            "修復氣場（Aura）底層的破洞。",
+            "幫助靈魂更穩固地居住在肉體之中（Grounding）。"
+          ],
+          gradient: "from-slate-300 to-slate-500",
+          pattern: "radial",
+          affirmation: "我感到安全，我的身體與靈魂回歸完美的秩序。"
+        },
+        {
+          freq: "285Hz",
+          title: "細胞修復與組織再生",
+          chakra: "海底輪 (Root Chakra)",
+          desc: "專注於修復受損組織，並找回能量場的完整性。",
+          physical: [
+            "加速傷口、燒燙傷及骨折的癒合過程。",
+            "強化免疫系統，恢復身體基礎活力。",
+            "改善長期慢性疲勞症候群。"
+          ],
+          spiritual: [
+            "修復受損的乙太體（Etheric Body）。",
+            "找回因創傷而流失的生命能量。",
+            "幫助你與大地母親重新連結。"
+          ],
+          gradient: "from-red-500 to-red-700",
+          pattern: "conic",
+          affirmation: "我的細胞充滿活力，生命力正在修復我的每一個部分。"
+        }
+      ]
+    },
+    {
+      id: "group2",
+      navLabel: "情緒釋放",
+      title: "第二組：情緒清理與轉化",
+      frequencies: ["396Hz", "417Hz"],
+      icon: _react2.default.createElement(_lucidereact.Zap, { className: "w-6 h-6" ,} ),
+      color: "bg-orange-50 text-orange-800",
+      borderColor: "border-orange-200",
+      scenarios: "釋放恐懼、轉化創傷、打破負面循環、清理潛意識",
+      usage: [
+        "情緒掃描：將能量盤置於臍輪（肚臍下方），允許情緒浮現而不評判。",
+        "釋放儀式：想像聲波像水流一樣，將體內淤積的黑色能量塊沖刷出體外。"
+      ],
+      details: [
+        {
+          freq: "396Hz",
+          title: "釋放愧疚與恐懼",
+          chakra: "海底輪 (Root Chakra)",
+          desc: "粉碎潛意識中的恐懼，將悲傷轉化為喜悅。",
+          physical: [
+            "釋放深層的焦慮感與無名的擔憂。",
+            "緩解因恐懼導致的腎上腺素過度分泌。",
+            "改善神經質與強迫性行為。"
+          ],
+          spiritual: [
+            "消除靈魂層面的內疚感（Guilt）與業力負擔。",
+            "幫助從前世或童年的創傷陰影中走出來。",
+            "增強海底輪的穩定性，讓人敢於存在。"
+          ],
+          gradient: "from-emerald-600 to-teal-800",
+          pattern: "radial",
+          affirmation: "我釋放所有不再服務於我的恐懼，我值得擁有喜悅。"
+        },
+        {
+          freq: "417Hz",
+          title: "清除負能量與轉化",
+          chakra: "臍輪 (Sacral Chakra)",
+          desc: "瓦解停滯的現狀，為生命帶來改變的動力。",
+          physical: [
+            "清理空間（如辦公室、住家）殘留的負面磁場。",
+            "打破拖延症與不良的生活習慣。",
+            "激發身體的行動力與創造力。"
+          ],
+          spiritual: [
+            "化解過去的創傷記憶，切斷負面能量索。",
+            "清理臍輪淤塞，恢復情感流動。",
+            "支持靈魂在面對變動時保持彈性。"
+          ],
+          gradient: "from-orange-400 to-amber-600",
+          pattern: "conic",
+          affirmation: "我釋放過去，擁抱無限的可能與變化。"
+        }
+      ]
+    },
+    {
+      id: "group3",
+      navLabel: "和諧共振",
+      title: "第三組：心輪療癒與豐盛",
+      frequencies: ["432Hz", "528Hz", "888Hz"],
+      icon: _react2.default.createElement(_lucidereact.Sparkles, { className: "w-6 h-6" ,} ),
+      color: "bg-yellow-50 text-yellow-800",
+      borderColor: "border-yellow-200",
+      scenarios: "心輪療癒、DNA修復、吸引豐盛、與自然連結",
+      usage: [
+        "心輪擴展：將 432Hz/528Hz 置於胸口，觀想綠色光芒擴展，感受無條件的愛。",
+        "豐盛顯化：使用 888Hz 時，觀想你理想的生活狀態，感受那種「已經擁有」的喜悅。"
+      ],
+      details: [
+        {
+          freq: "432Hz",
+          title: "宇宙自然諧振",
+          chakra: "心輪 (Heart Chakra)",
+          desc: "最接近自然與宇宙心跳的頻率，帶來身心的雙重放鬆。",
+          physical: [
+            "降低心率與血壓，快速進入深層放鬆。",
+            "平衡大腦左右半球，提升學習效率。",
+            "改善睡眠品質，減少多夢與淺眠。"
+          ],
+          spiritual: [
+            "與宇宙的脈搏同步，感受天人合一。",
+            "打開緊閉的心輪，提升同理心與愛的能力。",
+            "清理情緒體的混亂，帶來內在和平。"
+          ],
+          gradient: "from-rose-400 to-rose-600",
+          pattern: "radial",
+          affirmation: "我與宇宙的脈搏同步，我的心充滿了和諧。",
+          videoId: "u3papaX85MA" // YouTube Video ID for 432Hz
+        },
+        {
+          freq: "528Hz",
+          title: "DNA 修復與奇蹟",
+          chakra: "太陽神經叢 (Solar Plexus)",
+          desc: "愛的頻率，修復生命藍圖並喚醒內在力量。",
+          physical: [
+            "提升身體能量水平，減少疲憊感。",
+            "促進荷爾蒙平衡，調節內分泌系統。",
+            "修復受損的DNA結構，延緩衰老。"
+          ],
+          spiritual: [
+            "喚醒內在的神性與創造力。",
+            "吸引同步性事件（Synchronicity）與奇蹟。",
+            "增強太陽神經叢的力量，提升自我價值感。"
+          ],
+          gradient: "from-green-400 to-emerald-500",
+          pattern: "conic",
+          affirmation: "我敞開接受生命中的奇蹟，愛是我存在的本質。"
+        },
+        {
+          freq: "888Hz",
+          title: "無限豐盛與財富",
+          chakra: "靈魂之星 (Soul Star)",
+          desc: "將頻率調整至「接收模式」，吸引物質與靈性的豐盛。",
+          physical: [
+            "整理混亂的思緒，看清商業與生活機會。",
+            "增強自信與領導力，吸引貴人。",
+            "消除對金錢的焦慮與匱乏心態。"
+          ],
+          spiritual: [
+            "連結宇宙的無限豐盛源頭。",
+            "平衡施與受（Giving and Receiving）的能量流。",
+            "清理阻礙豐盛進入的業力模式。"
+          ],
+          gradient: "from-yellow-300 to-amber-500",
+          pattern: "radial",
+          affirmation: "我是豐盛的源頭，宇宙的財富正源源不斷流向我。"
+        }
+      ]
+    },
+    {
+      id: "group4",
+      navLabel: "心智覺醒",
+      title: "第四組：直覺與真理",
+      frequencies: ["741Hz", "852Hz"],
+      icon: _react2.default.createElement(_lucidereact.Brain, { className: "w-6 h-6" ,} ),
+      color: "bg-blue-50 text-blue-800",
+      borderColor: "border-blue-200",
+      scenarios: "提升表達、清理輻射、開啟直覺、看清真相",
+      usage: [
+        "喉輪淨化：使用 741Hz 時輕聲哼唱，釋放未表達的情緒。",
+        "眉心輪激活：將 852Hz 置於眉心前方，閉眼凝視內在視覺，訓練直覺力。"
+      ],
+      details: [
+        {
+          freq: "741Hz",
+          title: "直覺覺醒與淨化",
+          chakra: "喉輪 (Throat Chakra)",
+          desc: "淨化細胞毒素，並賦予真實表達的勇氣。",
+          physical: [
+            "清理體內累積的毒素與電磁波影響。",
+            "提升溝通技巧，改善喉嚨不適。",
+            "增強解決複雜問題的分析力。"
+          ],
+          spiritual: [
+            "移除「自我表達」的能量阻塞。",
+            "喚醒直覺，不再受他人謊言蒙蔽。",
+            "淨化病毒與細菌感染的負面能量場。"
+          ],
+          gradient: "from-cyan-400 to-blue-500",
+          pattern: "conic",
+          affirmation: "我真實地表達自己，我的聲音充滿力量與清晰。"
+        },
+        {
+          freq: "852Hz",
+          title: "回歸靈性秩序",
+          chakra: "眉心輪 (Third Eye)",
+          desc: "喚醒內在視覺，看清人與事的本質。",
+          physical: [
+            "停止大腦的過度思考（Overthinking）。",
+            "在混亂環境中保持頭腦清晰與冷靜。",
+            "改善神經系統的過度興奮。"
+          ],
+          spiritual: [
+            "開啟眉心輪，增強洞察力與預知力。",
+            "連結高我意識，獲得靈性指引。",
+            "看穿幻象，回歸靈魂的真實秩序。"
+          ],
+          gradient: "from-indigo-500 to-purple-700",
+          pattern: "radial",
+          affirmation: "我信任我的直覺，我看見宇宙的真理。"
+        }
+      ]
+    },
+    {
+      id: "group5",
+      navLabel: "靈性合一",
+      title: "第五組：神性連接與揚升",
+      frequencies: ["963Hz", "999Hz"],
+      icon: _react2.default.createElement(_lucidereact.Music, { className: "w-6 h-6" ,} ),
+      color: "bg-purple-50 text-purple-800",
+      borderColor: "border-purple-200",
+      scenarios: "深度冥想、松果體激活、高我連接、業力完成",
+      usage: [
+        "光體激活：冥想時想像白金光柱從頭頂灌入，能量盤作為錨點。",
+        "睡前調頻：設定意圖「在夢境中連接高我」，有助於清明夢。"
+      ],
+      details: [
+        {
+          freq: "963Hz",
+          title: "神性連接與松果體",
+          chakra: "頂輪 (Crown Chakra)",
+          desc: "激活松果體，體驗萬物合一的無條件之愛。",
+          physical: [
+            "調節生理時鐘，改善睡眠週期。",
+            "激活松果體功能，提升大腦潛能。",
+            "在深度放鬆中恢復身體元氣。"
+          ],
+          spiritual: [
+            "直接連結宇宙源頭能量（Source Energy）。",
+            "促進「清明夢」與靈魂出體體驗。",
+            "消除孤獨感，感受到萬物合一的歸屬。"
+          ],
+          gradient: "from-violet-400 via-fuchsia-500 to-white",
+          pattern: "conic",
+          affirmation: "我是光，我是愛，我與神性源頭合而為一。"
+        },
+        {
+          freq: "999Hz",
+          title: "高維合一與天使頻率",
+          chakra: "業力輪 / 星際門戶",
+          desc: "象徵週期的圓滿，幫助結束舊的業力循環。",
+          physical: [
+            "帶來無夢的深層休息（Deep Rest）。",
+            "釋放長期累積的身體沈重感。",
+            "幫助結束一段痛苦的關係或舊模式。"
+          ],
+          spiritual: [
+            "連結天使頻率與高維度指導靈。",
+            "完成靈魂契約，釋放業力負擔。",
+            "提升振動頻率，準備進入新的生命階段。"
+          ],
+          gradient: "from-yellow-200 via-white to-yellow-400",
+          pattern: "radial",
+          affirmation: "我已完成舊的循環，我準備好迎接靈魂的揚升。"
+        }
+      ]
+    }
+  ],
+  faq: [
+    {
+      q: "我該選擇「物理」還是「靈性」頻率？",
+      a: "其實兩者是相通的。如果你身體不適（如背痛），選擇 174Hz（物理），它同時也會修復你的安全感（靈性）。如果你想提升直覺（靈性），選擇 852Hz，它同時也會讓你的大腦停止混亂思考（物理）。"
+    },
+    {
+      q: "聽不到聲音有效果嗎？",
+      a: "能量盤是基於「頻率共振」與「幾何能量場」（Radionics）。即使沒有聲音，圖騰本身也是能量發射器。物理層面建議搭配聲音，靈性層面則可單純使用能量盤進行冥想。"
+    }
+  ]
+};
+
+// Helper: Get all individual frequencies
+const allFrequencyDetails = guideData.groups.flatMap(group => 
+  group.details.map(detail => ({
+    ...detail,
+    groupId: group.id,
+    groupTitle: group.title,
+    groupColor: group.color,
+    groupBorder: group.borderColor
+  }))
+);
+
+// --- Components ---
+
+const SectionCard = ({ children, className = "" }) => (
+  _react2.default.createElement('div', { className: `bg-white rounded-xl shadow-sm border p-6 mb-6 ${className}`,}
+    , children
+  )
+);
+
+const FrequencyBadge = ({ freq }) => (
+  _react2.default.createElement('span', { className: "inline-block px-3 py-1 rounded-full text-xs font-semibold bg-gray-100 text-gray-700 mr-2 mb-2"         ,}
+    , freq
+  )
+);
+
+const UsageStep = ({ index, text }) => (
+  _react2.default.createElement('div', { className: "flex gap-4 mb-4 items-start"   ,}
+    , _react2.default.createElement('div', { className: "flex-shrink-0 w-6 h-6 rounded-full bg-indigo-100 text-indigo-600 flex items-center justify-center font-bold text-sm mt-0.5"           ,}
+      , index + 1
+    )
+    , _react2.default.createElement('p', { className: "text-gray-700 text-sm leading-relaxed"  ,}, text)
+  )
+);
+
+const SimulatedDisc = ({ gradient, pattern, size = "large" }) => {
+  const sizeClasses = size === "large" ? "w-full h-full" : "w-16 h-16";
+  const holeSize = size === "large" ? "w-3 h-3" : "w-1.5 h-1.5";
+  
+  return (
+    _react2.default.createElement('div', { className: `relative ${sizeClasses} rounded-full overflow-hidden shadow-inner bg-gray-100 flex items-center justify-center`,}
+      , _react2.default.createElement('div', { className: `absolute inset-0 bg-gradient-to-br ${gradient} opacity-90`,})
+      , _react2.default.createElement('div', { className: "absolute inset-0 opacity-30"  , 
+           style: { 
+             backgroundImage: pattern === 'conic' 
+               ? 'conic-gradient(from 0deg, transparent 0deg, rgba(255,255,255,0.5) 180deg, transparent 360deg)' 
+               : 'radial-gradient(circle, rgba(255,255,255,0.8) 0%, transparent 70%)' 
+           },}
+      )
+      , _react2.default.createElement('div', { className: "absolute inset-0 border-[6px] border-white/20 rounded-full"    ,})
+      , _react2.default.createElement('div', { className: "absolute inset-[15%] border border-white/30 rounded-full border-dashed"     ,})
+      , _react2.default.createElement('div', { className: "absolute inset-[30%] border-[2px] border-white/20 rounded-full"    ,})
+      , _react2.default.createElement('div', { className: `absolute ${holeSize} bg-yellow-200 rounded-full shadow-md z-10 border border-yellow-400`,})
+    )
+  );
+};
+
+const DetailCard = ({ detail, colorClass }) => (
+  _react2.default.createElement('div', { className: "mt-4 p-4 rounded-lg bg-gray-50 border border-gray-100 transition-all hover:shadow-md"       ,}
+    , _react2.default.createElement('div', { className: "flex flex-col md:flex-row gap-6 items-center md:items-start"     ,}
+      , _react2.default.createElement('div', { className: "w-24 h-24 flex-shrink-0 relative group"    ,}
+        , _react2.default.createElement(SimulatedDisc, { gradient: detail.gradient, pattern: detail.pattern,} )
+      )
+
+      , _react2.default.createElement('div', { className: "flex-1 text-center md:text-left"  ,}
+        , _react2.default.createElement('h4', { className: `font-bold text-xl mb-1 ${colorClass.split(" ")[1]}`,}, detail.freq)
+        , detail.title && _react2.default.createElement('p', { className: "text-sm font-semibold text-gray-700 mb-2"   ,}, detail.title)
+        , _react2.default.createElement('p', { className: "text-sm text-gray-600 leading-relaxed mb-3"   ,}, detail.desc)
+
+        /* Mini tags for quick glance */
+        , _react2.default.createElement('div', { className: "flex flex-wrap gap-2 justify-center md:justify-start"    ,}
+           , _react2.default.createElement('span', { className: "text-xs bg-blue-50 text-blue-700 px-2 py-1 rounded border border-blue-100"       ,}
+             , detail.physical[0].substring(0, 10), "..."
+           )
+           , _react2.default.createElement('span', { className: "text-xs bg-purple-50 text-purple-700 px-2 py-1 rounded border border-purple-100"       ,}
+             , detail.spiritual[0].substring(0, 10), "..."
+           )
+        )
+      )
+    )
+  )
+);
+
+const Navigation = ({ currentView, setView, isMobileMenuOpen, setIsMobileMenuOpen }) => {
+  const [isGroupsOpen, setIsGroupsOpen] = _react.useState.call(void 0, false);
+  const [isFreqsOpen, setIsFreqsOpen] = _react.useState.call(void 0, false);
+  
+  const [isDesktopGroupsOpen, setIsDesktopGroupsOpen] = _react.useState.call(void 0, false);
+  const [isDesktopFreqsOpen, setIsDesktopFreqsOpen] = _react.useState.call(void 0, false);
+
+  const mainNavItems = [
+    { id: 'picker', label: '靈感抽取' },
+    { id: 'intro', label: '使用原則' },
+  ];
+
+  const groupItems = guideData.groups.map(g => ({
+    id: g.id,
+    label: g.navLabel
+  }));
+
+  const freqItems = allFrequencyDetails.map(f => ({
+    id: `freq-${f.freq}`,
+    label: f.freq,
+    originalFreq: f.freq
+  }));
+
+  const faqItem = { id: 'faq', label: 'FAQ' };
+
+  return (
+    _react2.default.createElement('nav', { className: "sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-200 shadow-sm"       ,}
+      , _react2.default.createElement('div', { className: "max-w-4xl mx-auto px-4"  ,}
+        , _react2.default.createElement('div', { className: "flex justify-between items-center h-16"   ,}
+          , _react2.default.createElement('div', { className: "flex items-center gap-2 cursor-pointer"   , onClick: () => setView('picker'),}
+            , _react2.default.createElement(_lucidereact.Disc, { className: "w-6 h-6 text-indigo-600 animate-spin-slow"   ,} )
+            , _react2.default.createElement('span', { className: "font-bold text-xl bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 to-purple-600"      ,}, "AuraTech"
+
+            )
+          )
+
+          /* Desktop Menu */
+          , _react2.default.createElement('div', { className: "hidden md:flex items-center space-x-1"   ,}
+            , mainNavItems.map((item) => (
+              _react2.default.createElement('button', {
+                key: item.id,
+                onClick: () => setView(item.id),
+                className: `px-3 py-2 rounded-md text-sm font-medium transition-colors whitespace-nowrap ${
+                  currentView === item.id 
+                    ? 'bg-indigo-50 text-indigo-700' 
+                    : 'text-gray-600 hover:bg-gray-50'
+                }`,}
+
+                , item.label
+              )
+            ))
+
+            , _react2.default.createElement('div', { className: "relative", onMouseEnter: () => setIsDesktopFreqsOpen(true), onMouseLeave: () => setIsDesktopFreqsOpen(false),}
+              , _react2.default.createElement('button', { className: `flex items-center gap-1 px-3 py-2 rounded-md text-sm font-medium transition-colors whitespace-nowrap ${currentView.startsWith('freq-') ? 'bg-indigo-50 text-indigo-700' : 'text-gray-600 hover:bg-gray-50'}`,}, "頻率簡介 "
+                 , _react2.default.createElement(_lucidereact.ChevronDown, { className: `w-4 h-4 transition-transform ${isDesktopFreqsOpen ? 'rotate-180' : ''}`,} )
+              )
+              , _react2.default.createElement(_framermotion.AnimatePresence, null
+                , isDesktopFreqsOpen && (
+                  _react2.default.createElement(_framermotion.motion.div, { initial: { opacity: 0, y: 10 }, animate: { opacity: 1, y: 0 }, exit: { opacity: 0, y: 10 }, className: "absolute top-full left-0 w-32 bg-white rounded-lg shadow-lg border border-gray-100 py-2 z-50 max-h-80 overflow-y-auto"            ,}
+                    , freqItems.map((item) => (
+                      _react2.default.createElement('button', { key: item.id, onClick: () => { setView(item.id); setIsDesktopFreqsOpen(false); }, className: `block w-full text-left px-4 py-2 text-sm hover:bg-gray-50 ${currentView === item.id ? 'text-indigo-600 font-medium bg-indigo-50' : 'text-gray-600'}`,}
+                        , item.label
+                      )
+                    ))
+                  )
+                )
+              )
+            )
+
+            , _react2.default.createElement('div', { className: "relative", onMouseEnter: () => setIsDesktopGroupsOpen(true), onMouseLeave: () => setIsDesktopGroupsOpen(false),}
+              , _react2.default.createElement('button', { className: `flex items-center gap-1 px-3 py-2 rounded-md text-sm font-medium transition-colors whitespace-nowrap ${groupItems.some(g => g.id === currentView) ? 'bg-indigo-50 text-indigo-700' : 'text-gray-600 hover:bg-gray-50'}`,}, "系列組別 "
+                 , _react2.default.createElement(_lucidereact.ChevronDown, { className: `w-4 h-4 transition-transform ${isDesktopGroupsOpen ? 'rotate-180' : ''}`,} )
+              )
+              , _react2.default.createElement(_framermotion.AnimatePresence, null
+                , isDesktopGroupsOpen && (
+                  _react2.default.createElement(_framermotion.motion.div, { initial: { opacity: 0, y: 10 }, animate: { opacity: 1, y: 0 }, exit: { opacity: 0, y: 10 }, className: "absolute top-full left-0 w-48 bg-white rounded-lg shadow-lg border border-gray-100 py-2 z-50"          ,}
+                    , groupItems.map((item) => (
+                      _react2.default.createElement('button', { key: item.id, onClick: () => { setView(item.id); setIsDesktopGroupsOpen(false); }, className: `block w-full text-left px-4 py-2 text-sm hover:bg-gray-50 ${currentView === item.id ? 'text-indigo-600 font-medium bg-indigo-50' : 'text-gray-600'}`,}
+                        , item.label
+                      )
+                    ))
+                  )
+                )
+              )
+            )
+
+            , _react2.default.createElement('button', { onClick: () => setView(faqItem.id), className: `px-3 py-2 rounded-md text-sm font-medium transition-colors whitespace-nowrap ${currentView === faqItem.id ? 'bg-indigo-50 text-indigo-700' : 'text-gray-600 hover:bg-gray-50'}`,}
+              , faqItem.label
+            )
+          )
+
+          , _react2.default.createElement('button', { className: "md:hidden p-2 rounded-md text-gray-600 hover:bg-gray-100"    , onClick: () => setIsMobileMenuOpen(!isMobileMenuOpen),}
+            , isMobileMenuOpen ? _react2.default.createElement(_lucidereact.X, { size: 24,} ) : _react2.default.createElement(_lucidereact.Menu, { size: 24,} )
+          )
+        )
+      )
+
+      , _react2.default.createElement(_framermotion.AnimatePresence, null
+        , isMobileMenuOpen && (
+          _react2.default.createElement(_framermotion.motion.div, { initial: { opacity: 0, height: 0 }, animate: { opacity: 1, height: 'auto' }, exit: { opacity: 0, height: 0 }, className: "md:hidden bg-white border-b border-gray-200 overflow-hidden"    ,}
+            , _react2.default.createElement('div', { className: "px-2 pt-2 pb-3 space-y-1"   ,}
+              , mainNavItems.map((item) => (
+                _react2.default.createElement('button', { key: item.id, onClick: () => { setView(item.id); setIsMobileMenuOpen(false); }, className: `block w-full text-left px-3 py-3 rounded-md text-base font-medium ${currentView === item.id ? 'bg-indigo-50 text-indigo-700' : 'text-gray-600 hover:bg-gray-50'}`,}
+                  , item.label
+                )
+              ))
+              , _react2.default.createElement('div', null
+                , _react2.default.createElement('button', { onClick: () => setIsFreqsOpen(!isFreqsOpen), className: `flex items-center justify-between w-full px-3 py-3 rounded-md text-base font-medium text-gray-600 hover:bg-gray-50 ${currentView.startsWith('freq-') ? 'text-indigo-700' : ''}`,}, "頻率簡介 "
+                   , _react2.default.createElement(_lucidereact.ChevronDown, { className: `w-5 h-5 transition-transform ${isFreqsOpen ? 'rotate-180' : ''}`,} )
+                )
+                , _react2.default.createElement(_framermotion.AnimatePresence, null
+                  , isFreqsOpen && (
+                    _react2.default.createElement(_framermotion.motion.div, { initial: { opacity: 0, height: 0 }, animate: { opacity: 1, height: 'auto' }, exit: { opacity: 0, height: 0 }, className: "overflow-hidden grid grid-cols-3 gap-2 px-4 py-2 bg-gray-50"      ,}
+                      , freqItems.map((item) => (
+                        _react2.default.createElement('button', { key: item.id, onClick: () => { setView(item.id); setIsMobileMenuOpen(false); }, className: `block w-full text-center px-2 py-2 rounded-md text-sm border ${currentView === item.id ? 'bg-indigo-100 text-indigo-700 border-indigo-200 font-bold' : 'bg-white text-gray-600 border-gray-200'}`,}
+                          , item.label
+                        )
+                      ))
+                    )
+                  )
+                )
+              )
+              , _react2.default.createElement('div', null
+                , _react2.default.createElement('button', { onClick: () => setIsGroupsOpen(!isGroupsOpen), className: `flex items-center justify-between w-full px-3 py-3 rounded-md text-base font-medium text-gray-600 hover:bg-gray-50 ${groupItems.some(g => g.id === currentView) ? 'text-indigo-700' : ''}`,}, "系列組別 "
+                   , _react2.default.createElement(_lucidereact.ChevronDown, { className: `w-5 h-5 transition-transform ${isGroupsOpen ? 'rotate-180' : ''}`,} )
+                )
+                , _react2.default.createElement(_framermotion.AnimatePresence, null
+                  , isGroupsOpen && (
+                    _react2.default.createElement(_framermotion.motion.div, { initial: { opacity: 0, height: 0 }, animate: { opacity: 1, height: 'auto' }, exit: { opacity: 0, height: 0 }, className: "overflow-hidden",}
+                      , groupItems.map((item) => (
+                        _react2.default.createElement('button', { key: item.id, onClick: () => { setView(item.id); setIsMobileMenuOpen(false); }, className: `block w-full text-left pl-8 pr-3 py-3 rounded-md text-sm ${currentView === item.id ? 'bg-indigo-50 text-indigo-700 font-medium' : 'text-gray-500 hover:text-gray-900 hover:bg-gray-50'}`,}
+                          , item.label
+                        )
+                      ))
+                    )
+                  )
+                )
+              )
+              , _react2.default.createElement('button', { onClick: () => { setView(faqItem.id); setIsMobileMenuOpen(false); }, className: `block w-full text-left px-3 py-3 rounded-md text-base font-medium ${currentView === faqItem.id ? 'bg-indigo-50 text-indigo-700' : 'text-gray-600 hover:bg-gray-50'}`,}
+                , faqItem.label
+              )
+            )
+          )
+        )
+      )
+    )
+  );
+};
+
+// Random Frequency Picker
+const FrequencyPicker = ({ setView }) => {
+  const [picked, setPicked] = _react.useState.call(void 0, null);
+  const [isAnimating, setIsAnimating] = _react.useState.call(void 0, false);
+
+  const handlePick = () => {
+    setIsAnimating(true);
+    setPicked(null);
+    setTimeout(() => {
+      const randomIndex = Math.floor(Math.random() * allFrequencyDetails.length);
+      setPicked(allFrequencyDetails[randomIndex]);
+      setIsAnimating(false);
+    }, 800);
+  };
+
+  return (
+    _react2.default.createElement('div', { className: "min-h-[60vh] flex items-center justify-center"   ,}
+      , _react2.default.createElement('div', { className: "w-full max-w-2xl bg-gradient-to-r from-indigo-500 to-purple-600 rounded-xl p-8 text-white shadow-lg text-center relative overflow-hidden"           ,}
+        , _react2.default.createElement('div', { className: "absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none"      ,}
+          , _react2.default.createElement('div', { className: "absolute top-10 left-10 w-20 h-20 bg-white rounded-full blur-xl"       ,})
+          , _react2.default.createElement('div', { className: "absolute bottom-10 right-10 w-32 h-32 bg-pink-400 rounded-full blur-xl"       ,})
+        )
+
+        , _react2.default.createElement('h2', { className: "text-2xl font-bold mb-4 relative z-10"    ,}, "平衡身心，連結靈魂")
+        , _react2.default.createElement('p', { className: "mb-6 text-indigo-100 relative z-10"   ,}, "讓直覺引領你，抽取此刻最適合你的頻率，同時滿足物理與靈性的需求。"
+
+        )
+
+        , !picked && !isAnimating && (
+          _react2.default.createElement('button', { onClick: handlePick, className: "bg-white text-indigo-600 px-8 py-3 rounded-full font-bold shadow-md hover:bg-indigo-50 transition-transform transform hover:scale-105 active:scale-95 flex items-center gap-2 mx-auto relative z-10"                 ,}
+            , _react2.default.createElement(_lucidereact.Sparkles, { className: "w-5 h-5" ,} ), "抽取今日頻率"
+
+          )
+        )
+
+        , isAnimating && (
+          _react2.default.createElement('div', { className: "flex flex-col items-center justify-center h-40 relative z-10"      ,}
+            , _react2.default.createElement(_lucidereact.RefreshCw, { className: "w-10 h-10 animate-spin text-white mb-2"    ,} )
+            , _react2.default.createElement('p', { className: "text-indigo-100 animate-pulse" ,}, "正在掃描能量場...")
+          )
+        )
+
+        , picked && !isAnimating && (
+          _react2.default.createElement(_framermotion.motion.div, { initial: { opacity: 0, scale: 0.8 }, animate: { opacity: 1, scale: 1 }, className: "bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20 relative z-10 max-w-md mx-auto"         ,}
+            , _react2.default.createElement('div', { className: "flex flex-col items-center"  ,}
+              , _react2.default.createElement('div', { className: "w-24 h-24 mb-4"  ,}
+                , _react2.default.createElement(SimulatedDisc, { gradient: picked.gradient, pattern: picked.pattern,} )
+              )
+              , _react2.default.createElement('h3', { className: "text-3xl font-bold mb-1"  ,}, picked.freq)
+              , _react2.default.createElement('p', { className: "text-base text-indigo-100 font-medium mb-3"   ,}, picked.title)
+              , _react2.default.createElement('p', { className: "text-sm opacity-90 mb-4 px-4"   ,}, picked.desc)
+              , _react2.default.createElement('p', { className: "text-sm font-medium italic mb-4 text-yellow-200"    ,}, "\"", picked.affirmation, "\"")
+              , _react2.default.createElement('div', { className: "flex gap-3" ,}
+                 , _react2.default.createElement('button', { onClick: handlePick, className: "text-sm text-indigo-200 hover:text-white underline flex items-center gap-1"      ,}
+                  , _react2.default.createElement(_lucidereact.RefreshCw, { className: "w-3 h-3" ,} ), "重新抽取"
+
+                )
+                 , _react2.default.createElement('button', { onClick: () => setView(`freq-${picked.freq}`), className: "text-sm bg-white/20 px-3 py-1 rounded-full hover:bg-white/30 transition-colors"      ,}, "詳情"
+
+                )
+              )
+            )
+          )
+        )
+      )
+    )
+  );
+};
+
+ function FrequencyGuide() {
+  const [view, setView] = _react.useState.call(void 0, 'picker');
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = _react.useState.call(void 0, false);
+
+  const renderContent = () => {
+    if (view.startsWith('freq-')) {
+      const freqKey = view.replace('freq-', '');
+      const detail = allFrequencyDetails.find(f => f.freq === freqKey);
+      
+      if (detail) {
+        return (
+           _react2.default.createElement(_framermotion.motion.div, { initial: { opacity: 0, y: 20 }, animate: { opacity: 1, y: 0 }, exit: { opacity: 0 }, key: view,}
+              , _react2.default.createElement('div', { className: "mb-4",}
+                , _react2.default.createElement('button', { onClick: () => setView('picker'), className: "flex items-center text-sm text-gray-500 hover:text-indigo-600 transition-colors"     ,}
+                  , _react2.default.createElement(_lucidereact.ArrowLeft, { className: "w-4 h-4 mr-1"  ,} ), "返回抽牌"
+
+                )
+              )
+
+              , _react2.default.createElement('div', { className: "bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100"     ,}
+                , _react2.default.createElement('div', { className: `relative h-48 bg-gradient-to-r ${detail.gradient} flex items-center justify-center`,}
+                  , _react2.default.createElement('div', { className: "absolute inset-0 bg-black/10"  ,})
+                  , _react2.default.createElement('div', { className: "relative z-10 text-center text-white p-4"    ,}
+                     , _react2.default.createElement('h1', { className: "text-5xl font-bold tracking-tight mb-2 text-shadow-sm"    ,}, detail.freq)
+                     , _react2.default.createElement('p', { className: "text-lg font-medium opacity-90"  ,}, detail.title)
+                  )
+                )
+
+                , _react2.default.createElement('div', { className: "p-6 md:p-8" ,}
+                  , _react2.default.createElement('div', { className: "flex flex-wrap gap-3 mb-6"   ,}
+                    , _react2.default.createElement('span', { className: "px-3 py-1 bg-indigo-50 text-indigo-700 rounded-full text-sm font-medium flex items-center gap-1"         ,}
+                      , _react2.default.createElement(_lucidereact.Activity, { className: "w-4 h-4" ,} )
+                      , detail.groupTitle.split("：")[1]
+                    )
+                    , detail.chakra && (
+                      _react2.default.createElement('span', { className: "px-3 py-1 bg-amber-50 text-amber-700 rounded-full text-sm font-medium"      ,}
+                        , detail.chakra
+                      )
+                    )
+                  )
+
+                  , _react2.default.createElement('div', { className: "prose prose-indigo max-w-none mb-8"   ,}
+                    , _react2.default.createElement('p', { className: "text-lg text-gray-700 leading-relaxed font-medium"   ,}
+                      , detail.desc
+                    )
+                  )
+
+                  /* Dual Column Layout for Physical vs Spiritual */
+                  , _react2.default.createElement('div', { className: "grid grid-cols-1 md:grid-cols-2 gap-6 mb-8"    ,}
+
+                    /* Physical Column */
+                    , _react2.default.createElement('div', { className: "bg-blue-50/50 rounded-xl p-6 border border-blue-100"    ,}
+                      , _react2.default.createElement('h3', { className: "text-lg font-bold text-blue-900 mb-4 flex items-center gap-2"      ,}
+                         , _react2.default.createElement(_lucidereact.Activity, { className: "w-5 h-5 text-blue-600"  ,} ), "物理與心智層面"
+
+                      )
+                      , _react2.default.createElement('ul', { className: "space-y-3",}
+                        , detail.physical.map((effect, idx) => (
+                          _react2.default.createElement('li', { key: idx, className: "flex items-start gap-3"  ,}
+                            , _react2.default.createElement('span', { className: "mt-1.5 w-1.5 h-1.5 rounded-full bg-blue-400 flex-shrink-0"     ,})
+                            , _react2.default.createElement('span', { className: "text-gray-700 text-sm leading-relaxed"  ,}, effect)
+                          )
+                        ))
+                      )
+                    )
+
+                    /* Spiritual Column */
+                    , _react2.default.createElement('div', { className: "bg-purple-50/50 rounded-xl p-6 border border-purple-100"    ,}
+                      , _react2.default.createElement('h3', { className: "text-lg font-bold text-purple-900 mb-4 flex items-center gap-2"      ,}
+                         , _react2.default.createElement(_lucidereact.Sparkles, { className: "w-5 h-5 text-purple-600"  ,} ), "靈性與能量層面"
+
+                      )
+                      , _react2.default.createElement('ul', { className: "space-y-3",}
+                        , detail.spiritual.map((effect, idx) => (
+                          _react2.default.createElement('li', { key: idx, className: "flex items-start gap-3"  ,}
+                            , _react2.default.createElement('span', { className: "mt-1.5 w-1.5 h-1.5 rounded-full bg-purple-400 flex-shrink-0"     ,})
+                            , _react2.default.createElement('span', { className: "text-gray-700 text-sm leading-relaxed"  ,}, effect)
+                          )
+                        ))
+                      )
+                    )
+
+                  )
+
+                  , _react2.default.createElement('div', { className: "bg-gray-50 border-l-4 border-indigo-400 p-4 rounded-r-lg mb-8 italic text-gray-600"       ,}
+                    , _react2.default.createElement('span', { className: "font-bold text-gray-400 not-italic mr-2"   ,}, "肯定語:"), "\""
+                    , detail.affirmation, "\""
+                  )
+
+                  /* YouTube Embed Section - Standard Official Embed Code */
+                  , detail.videoId && (
+                    _react2.default.createElement('div', { className: "mb-8",}
+                      , _react2.default.createElement('h3', { className: "text-lg font-bold text-gray-900 mb-4 flex items-center gap-2"      ,}
+                        , _react2.default.createElement(_lucidereact.PlayCircle, { className: "w-5 h-5 text-red-600"  ,} ), "頻率共振引導"
+
+                      )
+                      , _react2.default.createElement('div', { className: "relative w-full rounded-xl overflow-hidden shadow-md bg-black aspect-video"      ,}
+                        , _react2.default.createElement('iframe', { 
+                          width: "100%", 
+                          height: "100%", 
+                          src: `https://www.youtube.com/embed/${detail.videoId}`, 
+                          title: "YouTube video player"  , 
+                          frameBorder: "0", 
+                          allow: "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"      , 
+                          referrerPolicy: "strict-origin-when-cross-origin", 
+                          allowFullScreen: true,
+                          className: "absolute top-0 left-0 w-full h-full"    ,}
+)
+                      )
+                    )
+                  )
+
+                  , _react2.default.createElement('div', { className: "flex justify-center mt-8 pt-6 border-t border-gray-100"     ,}
+                    , _react2.default.createElement('button', { onClick: () => setView(detail.groupId), className: "text-indigo-600 font-medium hover:text-indigo-800 flex items-center gap-2 transition-colors"      ,}, "查看所屬組別完整指南 "
+                       , _react2.default.createElement(_lucidereact.ChevronRight, { className: "w-4 h-4" ,} )
+                    )
+                  )
+                )
+              )
+            )
+        );
+      }
+    }
+
+    switch (view) {
+      case 'picker':
+        return (
+          _react2.default.createElement(_framermotion.motion.div, { initial: { opacity: 0, y: 20 }, animate: { opacity: 1, y: 0 }, exit: { opacity: 0 }, key: "picker",}
+            , _react2.default.createElement(FrequencyPicker, { setView: setView,} )
+          )
+        );
+
+      case 'intro':
+        return (
+          _react2.default.createElement(_framermotion.motion.div, { initial: { opacity: 0, y: 20 }, animate: { opacity: 1, y: 0 }, exit: { opacity: 0 }, key: "intro",}
+            , _react2.default.createElement('div', { className: "text-center mb-10" ,}
+              , _react2.default.createElement('h1', { className: "text-3xl md:text-4xl font-bold text-gray-900 mb-4"    ,}, guideData.intro.title)
+              , _react2.default.createElement('p', { className: "text-gray-500",}, "探索物理共振與靈性揚升的交會點")
+            )
+
+            , _react2.default.createElement(SectionCard, null
+              , _react2.default.createElement('h2', { className: "text-xl font-bold mb-6 flex items-center gap-2"     ,}
+                , _react2.default.createElement(_lucidereact.Info, { className: "w-5 h-5 text-indigo-600"  ,} ), "核心使用原則"
+
+              )
+              , _react2.default.createElement('div', { className: "space-y-4",}
+                , guideData.intro.corePrinciples.map((text, idx) => (
+                  _react2.default.createElement('div', { key: idx, className: "flex gap-3 text-gray-700 text-sm leading-relaxed"    ,}
+                    , _react2.default.createElement('span', { className: "w-1.5 h-1.5 rounded-full bg-indigo-400 mt-2 flex-shrink-0"     ,})
+                    , _react2.default.createElement('p', null, text)
+                  )
+                ))
+              )
+            )
+          )
+        );
+
+      case 'faq':
+        return (
+          _react2.default.createElement(_framermotion.motion.div, { initial: { opacity: 0, y: 20 }, animate: { opacity: 1, y: 0 }, exit: { opacity: 0 }, key: "faq",}
+            , _react2.default.createElement(SectionCard, null
+              , _react2.default.createElement('h2', { className: "text-xl font-bold mb-6"  ,}, "常見問題解答")
+              , _react2.default.createElement('div', { className: "space-y-6",}
+                , guideData.faq.map((item, idx) => (
+                  _react2.default.createElement('div', { key: idx, className: "border-b border-gray-100 last:border-0 pb-6 last:pb-0"    ,}
+                    , _react2.default.createElement('h3', { className: "font-bold text-gray-900 mb-2 flex gap-2"    ,}
+                      , _react2.default.createElement('span', { className: "text-indigo-600",}, "Q:")
+                      , item.q
+                    )
+                    , _react2.default.createElement('p', { className: "text-gray-600 text-sm leading-relaxed pl-6"   ,}
+                      , _react2.default.createElement('span', { className: "font-bold text-gray-400 mr-2"  ,}, "A:")
+                      , item.a
+                    )
+                  )
+                ))
+              )
+            )
+          )
+        );
+
+      default:
+        const group = guideData.groups.find(g => g.id === view);
+        if (group) {
+          return (
+            _react2.default.createElement(_framermotion.motion.div, { initial: { opacity: 0, y: 20 }, animate: { opacity: 1, y: 0 }, exit: { opacity: 0 }, key: group.id,}
+              , _react2.default.createElement('div', { className: "mb-4",}
+                , _react2.default.createElement('button', { onClick: () => setView('picker'), className: "flex items-center text-sm text-gray-500 hover:text-indigo-600 transition-colors"     ,}
+                  , _react2.default.createElement(_lucidereact.ArrowLeft, { className: "w-4 h-4 mr-1"  ,} ), "返回抽牌"
+
+                )
+              )
+              , _react2.default.createElement(SectionCard, { className: `border-t-4 ${group.borderColor}`,}
+                , _react2.default.createElement('div', { className: "flex items-center gap-3 mb-6"   ,}
+                  , _react2.default.createElement('div', { className: `p-2 rounded-lg ${group.color}`,}
+                    , group.icon
+                  )
+                  , _react2.default.createElement('div', null
+                    , _react2.default.createElement('h2', { className: "text-xl font-bold text-gray-900"  ,}, group.title)
+                    , _react2.default.createElement('div', { className: "mt-1",}
+                      , group.frequencies.map(f => _react2.default.createElement(FrequencyBadge, { key: f, freq: f,} ))
+                    )
+                  )
+                )
+
+                , _react2.default.createElement('div', { className: "mb-6 bg-gray-50 p-4 rounded-lg"   ,}
+                  , _react2.default.createElement('h3', { className: "text-sm font-bold text-gray-900 uppercase tracking-wide mb-2"     ,}, "適配場景")
+                  , _react2.default.createElement('p', { className: "text-gray-600 text-sm" ,}, group.scenarios)
+                )
+
+                , _react2.default.createElement('div', { className: "mb-8",}
+                  , _react2.default.createElement('h3', { className: "text-lg font-bold text-gray-900 mb-4"   ,}, "通用使用方法")
+                  , group.usage.map((step, idx) => (
+                    _react2.default.createElement(UsageStep, { key: idx, index: idx, text: step,} )
+                  ))
+                )
+
+                , _react2.default.createElement('div', null
+                  , _react2.default.createElement('h3', { className: "text-lg font-bold text-gray-900 mb-4 flex items-center gap-2"      ,}
+                    , _react2.default.createElement(_lucidereact.ChevronRight, { className: "w-5 h-5 text-gray-400"  ,} ), "單頻特性差異"
+
+                  )
+                  , _react2.default.createElement('div', { className: "grid grid-cols-1 gap-4"  ,}
+                    , group.details.map((detail, idx) => (
+                      _react2.default.createElement(DetailCard, { key: idx, detail: detail, colorClass: group.color,} )
+                    ))
+                  )
+                )
+              )
+            )
+          );
+        }
+        return null;
+    }
+  };
+
+  return (
+    _react2.default.createElement('div', { className: "min-h-screen bg-gray-50 font-sans text-gray-900 selection:bg-indigo-100 selection:text-indigo-900"     ,}
+      , _react2.default.createElement(Navigation, { currentView: view, setView: setView, isMobileMenuOpen: isMobileMenuOpen, setIsMobileMenuOpen: setIsMobileMenuOpen,} )
+      , _react2.default.createElement('main', { className: "max-w-4xl mx-auto px-4 py-8 space-y-8"    ,}
+        , _react2.default.createElement(_framermotion.AnimatePresence, { mode: "wait",}
+          , renderContent()
+        )
+        , _react2.default.createElement('footer', { className: "pb-12 text-center px-4 pt-8 border-t border-gray-200 mt-8"      ,}
+          , _react2.default.createElement('p', { className: "text-sm text-gray-500 font-medium"  ,}, "Source: AuraTech Frequency Guide."   )
+        )
+      )
+    )
+  );
+} exports.default = FrequencyGuide;</script></head>
+  <body>
+  
+
+<div id="preview-app"></div></body></html>
